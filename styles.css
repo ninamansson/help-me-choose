@@ -4,7 +4,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-top: 150px;
-	background: linear-gradient(white, pink); 
+	margin-bottom: 100px; 
+}
+
+.backgroundgradient {background: linear-gradient(70deg, white, pink);
 }
 
 h1 {

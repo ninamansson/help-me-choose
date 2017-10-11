@@ -5,14 +5,27 @@
 		<title>Help me choose</title>
 		<link rel="stylesheet" href="./styles.css" type="text/css">
 	</head>
-	<body>
+	<body class="backgroundgradient">
 		<h1>Help me choose between...</h1>
 		<div class="inputsection">
 			<div class="inputs">
 				<input placeholder="Something"></input>
 			</div>
-			<button class="addOption" class="button">Add</button>
+			<button class="addOption" >Add</button>
 		</div>
+		<div class="resultsection"></div>
 		<button class="button">Go!</button>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script> 
+		$(function(){
+		$('.resultsection')	.hide()
+
+		var add_option = function() {
+			$('.inputs') .append ('<input></input>') 
+		}
+		$('.addOption').click(add_option)
+		})
+		</script>
 	</body>
 </html>
