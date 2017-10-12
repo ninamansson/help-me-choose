@@ -4,10 +4,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-top: 150px;
-	margin-bottom: 100px; 
+	margin-bottom: 100px;
+	font-family: 'Lato', sans-serif; 
 }
 
-.backgroundgradient {background: linear-gradient(70deg, white, pink);
+.backgroundgradient {background: linear-gradient(70deg, white, green);
 }
 
 h1 {
@@ -57,3 +58,14 @@ input {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.resultsection {
+	display: flex;
+	align-items: center;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	color: black;
+  	font-size: 36px;
+  	font-family: 'Lato', sans-serif;
+}
+	

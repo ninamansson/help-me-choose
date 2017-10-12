@@ -11,21 +11,34 @@
 			<div class="inputs">
 				<input placeholder="Something"></input>
 			</div>
-			<button class="addOption" >Add</button>
+			<button class="addOption button" >Add</button>
 		</div>
 		<div class="resultsection"></div>
-		<button class="button">Go!</button>
+		<button class="submit button">Go!</button>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script> 
-		$(function(){
-		$('.resultsection')	.hide()
+			$(function() {
+				$('.resultsection').hide()
 
-		var add_option = function() {
-			$('.inputs') .append ('<input></input>') 
-		}
-		$('.addOption').click(add_option)
-		})
+				var add_option = function() {
+					$('.inputs').append ('<input></input>') 
+				}
+				$('.addOption').click(add_option)
+
+				var options = []
+				var submit = function() {
+					$('.inputsection').hide()
+					$('.resultsection').css('display','flex')
+					$('input').each(function() {
+						options.push($(this).val())
+					})
+					var winner = options[Math.floor(Math.random()*options.length)]
+					console.log(winner)
+					$('.resultsection').text(winner)
+				}
+				$('.submit').click(submit)
+			})
 		</script>
 	</body>
 </html>
