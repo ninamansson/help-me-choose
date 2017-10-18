@@ -5,10 +5,11 @@ body {
 	align-items: center;
 	margin-top: 150px;
 	margin-bottom: 100px;
+	font-weight: bold;
 	font-family: 'Lato', sans-serif; 
 }
 
-.backgroundgradient {background: linear-gradient(70deg, white, green);
+.backgroundgradient {background: linear-gradient (70deg, white, #cc6666);
 }
 
 h1 {
@@ -16,11 +17,17 @@ h1 {
 	font-size: 60px;
 	letter-spacing: 2px;
 	margin-bottom: 0px;
+}
 
+h1 {
+	font-weight: lighter;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 0px;
 }
 
 .inputsection {
-	margin: 50px 0px 80px 0px;
+	margin: 100px 0px 80px 0px;
 	width: 400px;
 }
 
@@ -45,16 +52,16 @@ input {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #b76e79;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {background-color: #cc6666}
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #b7886e;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -67,5 +74,6 @@ input {
 	color: black;
   	font-size: 36px;
   	font-family: 'Lato', sans-serif;
+  	font-weight: bold; 
 }
 	
